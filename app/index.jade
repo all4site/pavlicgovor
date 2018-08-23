@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		// build:css css/main.min.css
+		// bower:css
+		link(rel='stylesheet', href='js/all4site-fontawesome/dist/css/fontawesome-all.css')
+		link(rel='stylesheet', href='js/animate.css/animate.css')
+		link(rel='stylesheet', href='js/slick-carousel/slick/slick.css')
+		link(rel='stylesheet', href='js/all4site-normalize/normalize.css')
+		// endbower
+		link(rel="stylesheet", href="css/main.min.css")
+		// endbuild
+		link(rel="icon", href="img/favicon.png")
+		title Document
+body
+	.onTop
+		a(href="#onTop" data-target="menu")
+			img(src="img/arrow-up-.svg", alt="")
+	nav.menu.gird#onTop
+		ul
+			a(href="#about" data-target="menu")
+				li о нас
+			a(href="#photo" data-target="menu")
+				li фото
+			a(href="#servises" data-target="menu")
+				li услуги
+			a(href="#contacts" data-target="menu")
+				li контакты
+	.headerImg.grid
+		.img.grid
+			.logo.grid
+				img(src="img/logo.png", alt="logo")
+			.headerBottom.grid
+				span PAVLIK GOVOR1 SOUND – MUSIC
+				span команда профессионалов, предоставляющая полный спектр услуг в сфере шоу-бизнеса на рынке
+				span Украины!
+	.wrapper#about
+		h2 о нас
+		.about
+			p Мы предоставляем услуги по созданию качественного музыкального и видео продукта, начиная от создания аранжировки и накопления вокала, сведения и мастеринга, заканчивая полностью готовой и адаптированной под исполнителя композицией.
+			p Наши педагоги готовы работать с вокалистами и подготавливать их к выступлениям на различных фестивалях и конкурсах, а профессиональная команда – создавать аранжировки и редактировать музыкальные композиции и видеоряд под выступления артистов на сценах любых масштабов.
+			p Наша студия – это Ваш верный, надежный и профессиональный помощник!
+	.photo.grid#photo
+		.imgPhoto.grid
+			a(href="#!").grid
+				.img.grid
+					img(src="img/photo1.jpg", alt="")
+				.textPhoto.grid
+					span Наша любимая студия
+		.imgPhoto.grid
+			a(href="#!").grid
+				.img.grid
+					img(src="img/photo2.jpg", alt="")
+				.textPhoto.grid
+					span Наша любимая студия
+		.imgPhoto.grid
+				a(href="#!").grid
+					.img.grid
+						img(src="img/photo3.jpg", alt="")
+					.textPhoto.grid
+						span Наша любимая студия
+		.imgPhoto.grid
+			a(href="#!").grid
+				.img.grid
+					img(src="img/photo4.jpg", alt="")
+				.textPhoto.grid
+					span Наша любимая студия
+		.imgPhoto.grid
+			a(href="#!").grid
+				.img.grid
+					img(src="img/photo5.jpg", alt="")
+				.textPhoto.grid
+					span Наша любимая студия
+		.imgPhoto.grid
+			a(href="#!").grid
+				.img.grid
+					img(src="img/photo6.jpg", alt="")
+				.textPhoto.grid
+					span Наша любимая студия
+	.wrapper#servises
+		h2 услуги
+		.services
+			span Профессиональная студия звукозаписи&nbsp
+			span PAVLIK GOVOR1 SOUND&nbsp
+			span &#8212&nbspпредоставляет широкий спектр услуг:
+			.servicesTable.grid
+				.t
+					span Песни «под ключ»
+				.t
+					span Написание текста и музыки
+				.t
+					span Звукозапись
+				.t
+					span Аранжировка
+				.t
+					span Сведение
+				.t
+					span Мастеринг
+				.t
+					span Клип «под ключ»
+				.t
+					span Рекламный ролик
+				.t
+					span Дубляж
+				.t
+					span Озвучивание видео
+				.t
+					span Создание музыкального материала для фильмов, рекламных роликов, презентаций
+				.t
+					span Услуги сессионных музыкантов
+				.t
+					span Уроки вокала
+				.t
+					span Репетиционная база
+	.ourStudio
+		.wrapper
+			.textTop
+				span Наша студия основана в 2018 году. Расположена в центре Киева.
+				br
+				span Директорами являются:
+				br
+				br
+				b Дмитрий Говоренко
+				br
+				span основатель студии, композитор, продюсер группы «Two Kooms»
+				br
+				span &
+				br
+				b Александр Павлик
+				br
+				span заслуженный артист Украины, участник группы «Two Kooms».
+			.ad
+				span Со студией сотрудничает успешный музыкальный проект группа&nbsp
+				a(href="#!")«Two Kooms»
+	.wrapper#contacts
+		h2 контакты
+		.contacts.grid
+			.feedback.grid
+				form(action="mail.php" method="POST").feedback.grid#form
+					input(name="name" type="text")
+					label имя
+					input(type="text" name="email")
+					label email
+					textarea(name="somText", cols="30", rows="10")
+					.btn.pulse
+						input(type="submit" value="ОТПРАВИТЬ")
+			.br.grid
+			.address.grid
+				.addr.grid
+					b АДРЕС:
+					span Киев, ул. Киквидзе, 2/34
+				.addr.grid
+					b ТЕЛ:
+					span +38068 72 72 777 Владлена
+				.addr.grid
+					b EMAIL:
+					span pavlik.soundmusic.govor@gmail.com
+				.social.grid
+					a(href="#!")
+						.fab.fa-facebook-f
+					a(href="#!")
+						.fab.fa-instagram
+	.footer.grid
+		.right
+			span @2018 all right reserved
+		.create
+			a(href="#!")
+				span created by all4site studio
+	// build:js js/main.min.js
+	// bower:js
+	script(src='js/jquery/dist/jquery.js')
+	script(src='js/slick-carousel/slick/slick.js')
+	// endbower
+	script(src="js/main.js")
+	// endbuild
