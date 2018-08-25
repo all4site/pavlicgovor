@@ -24,7 +24,28 @@ $(document).mouseup(function (e) { // событие клика по веб-до
 	{
 		test.removeClass('labelClick') // скрываем его
 	}
-});
+	});
+//Magnific
+	$('.imgPhoto a').click(function (e) {
+		e.preventDefault();
+	});
+	$('.imgPhoto a').magnificPopup({
+		disableOn: 400,
+		type: 'image',
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
+		}
+	});
+//MMENU
+	$('#mbutton').click(function () {
+		$('.hamburger--slider').toggleClass('is-active');
+		$(this).toggleClass('full');
+		$('body').toggleClass('leftSlide');
+	});
 });
 
 

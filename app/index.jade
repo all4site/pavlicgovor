@@ -8,17 +8,47 @@ html(lang="en")
 		// bower:css
 		link(rel='stylesheet', href='js/all4site-fontawesome/dist/css/fontawesome-all.css')
 		link(rel='stylesheet', href='js/animate.css/animate.css')
+		link(rel='stylesheet', href='js/css-hamburgers/dist/hamburgers.css')
 		link(rel='stylesheet', href='js/slick-carousel/slick/slick.css')
 		link(rel='stylesheet', href='js/all4site-normalize/normalize.css')
+		link(rel='stylesheet', href='js/magnific-popup/dist/magnific-popup.css')
 		// endbower
 		link(rel="stylesheet", href="css/main.min.css")
 		// endbuild
 		link(rel="icon", href="img/favicon.png")
 		title Document
 body
+	a(href="#mmenu")#mbutton
+		.hamburger.hamburger--slider
+			span.hamburger-box
+				span.hamburger-inner
+	#mmenu
+		.background.grid
+			ul.grid
+				li.grid
+					a(href="#about" data-target="menu").grid о нас
+				li.grid
+					a(href="#photo" data-target="menu").grid фото
+				li.grid
+					a(href="#servises" data-target="menu").grid услуги
+				li.grid
+					a(href="#contacts" data-target="menu").grid контакти
+			.contact.grid
+				img(src="img/smartphone.svg", alt="")
+				span +38068 72 72 777
+				img(src="img/message.svg", alt="")
+				span pavlik.soundmusic.govor@gmail.com
+			.socialMmenu.grid
+				a(href="#!")
+					.socialBlockMmenu.grid
+						.fab.fa-facebook-f
+				a(href="#!")
+					.socialBlockMmenu.grid
+						.fab.fa-instagram
 	.onTop
 		a(href="#onTop" data-target="menu")
 			img(src="img/arrow-up-.svg", alt="")
+
 	nav.menu.gird#onTop
 		ul
 			a(href="#about" data-target="menu")
@@ -45,37 +75,37 @@ body
 			p Наша студия – это Ваш верный, надежный и профессиональный помощник!
 	.photo.grid#photo
 		.imgPhoto.grid
-			a(href="#!").grid
-				.img.grid
+			a(href="img/photo1.jpg" title="Наша любимая студия").grid
+				.img#img.grid
 					img(src="img/photo1.jpg", alt="")
-				.textPhoto.grid
+				.textPhoto.grid.mfp-title
 					span Наша любимая студия
 		.imgPhoto.grid
-			a(href="#!").grid
+			a(href="img/photo2.jpg").grid
 				.img.grid
 					img(src="img/photo2.jpg", alt="")
 				.textPhoto.grid
 					span Наша любимая студия
 		.imgPhoto.grid
-				a(href="#!").grid
+				a(href="img/photo3.jpg").grid
 					.img.grid
 						img(src="img/photo3.jpg", alt="")
 					.textPhoto.grid
 						span Наша любимая студия
 		.imgPhoto.grid
-			a(href="#!").grid
+			a(href="img/photo4.jpg").grid
 				.img.grid
 					img(src="img/photo4.jpg", alt="")
 				.textPhoto.grid
 					span Наша любимая студия
 		.imgPhoto.grid
-			a(href="#!").grid
+			a(href="img/photo5.jpg").grid
 				.img.grid
 					img(src="img/photo5.jpg", alt="")
 				.textPhoto.grid
 					span Наша любимая студия
 		.imgPhoto.grid
-			a(href="#!").grid
+			a(href="img/photo6.jpg").grid
 				.img.grid
 					img(src="img/photo6.jpg", alt="")
 				.textPhoto.grid
@@ -84,8 +114,10 @@ body
 		h2 услуги
 		.services
 			span Профессиональная студия звукозаписи&nbsp
+			br.hide
 			span PAVLIK GOVOR1 SOUND&nbsp
-			span &#8212&nbspпредоставляет широкий спектр услуг:
+			br.hide
+			span &nbspпредоставляет широкий спектр услуг:
 			.servicesTable.grid
 				.t
 					span Песни «под ключ»
@@ -134,6 +166,7 @@ body
 				span заслуженный артист Украины, участник группы «Two Kooms».
 			.ad
 				span Со студией сотрудничает успешный музыкальный проект группа&nbsp
+				br.hide
 				a(href="#!")«Two Kooms»
 	.wrapper#contacts
 		h2 контакты
@@ -173,6 +206,7 @@ body
 	// bower:js
 	script(src='js/jquery/dist/jquery.js')
 	script(src='js/slick-carousel/slick/slick.js')
+	script(src='js/magnific-popup/dist/jquery.magnific-popup.js')
 	// endbower
 	script(src="js/main.js")
 	// endbuild

@@ -2,7 +2,28 @@
 @import base
 @import vars
 @import btn
+@import mmenu
+.hide
+	display: none
+.mfp-bg
+	opacity: 1
 
+.mfp-arrow
+	&::before
+		border-left: none
+		border-right: none
+.mfp-with-zoom
+  .mfp-container, &.mfp-bg
+    opacity: 0
+    transition: all 0.3s ease-out
+  &.mfp-ready
+    .mfp-container
+      opacity: 1
+    &.mfp-bg
+      opacity: 0.8
+  &.mfp-removing
+    .mfp-container, &.mfp-bg
+      opacity: 0
 .labelClick
 	transform: translateY(-70px) scale(0.9) translateX(-20px) !important
 	color: fade-out($black, 0.5)
@@ -212,7 +233,7 @@
 
 	label
 		transform: translateY(-45px)
-		transition: all .5s ease
+		transition: all 0.5s ease
 
 	textarea
 		border: 1px solid $black

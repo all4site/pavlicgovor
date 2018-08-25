@@ -8,8 +8,10 @@
     <!-- bower:css-->
     <link rel="stylesheet" href="js/all4site-fontawesome/dist/css/fontawesome-all.css"/>
     <link rel="stylesheet" href="js/animate.css/animate.css"/>
+    <link rel="stylesheet" href="js/css-hamburgers/dist/hamburgers.css"/>
     <link rel="stylesheet" href="js/slick-carousel/slick/slick.css"/>
     <link rel="stylesheet" href="js/all4site-normalize/normalize.css"/>
+    <link rel="stylesheet" href="js/magnific-popup/dist/magnific-popup.css"/>
     <!-- endbower-->
     <link rel="stylesheet" href="css/main.min.css"/>
     <!-- endbuild-->
@@ -17,7 +19,26 @@
     <title>Document</title>
   </head>
 </html>
-<body>
+<body><a href="#mmenu" id="mbutton">
+    <div class="hamburger hamburger--slider"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a>
+  <div id="mmenu">
+    <div class="background grid">
+      <ul class="grid">
+        <li class="grid"><a href="#about" data-target="menu" class="grid">о нас</a></li>
+        <li class="grid"><a href="#photo" data-target="menu" class="grid">фото</a></li>
+        <li class="grid"><a href="#servises" data-target="menu" class="grid">услуги</a></li>
+        <li class="grid"><a href="#contacts" data-target="menu" class="grid">контакти</a></li>
+      </ul>
+      <div class="contact grid"><img src="img/smartphone.svg" alt=""/><span>+38068 72 72 777</span><img src="img/message.svg" alt=""/><span>pavlik.soundmusic.govor@gmail.com</span></div>
+      <div class="socialMmenu grid"><a href="#!">
+          <div class="socialBlockMmenu grid">
+            <div class="fab fa-facebook-f"></div>
+          </div></a><a href="#!">
+          <div class="socialBlockMmenu grid">
+            <div class="fab fa-instagram"></div>
+          </div></a></div>
+    </div>
+  </div>
   <div class="onTop"><a href="#onTop" data-target="menu"><img src="img/arrow-up-.svg" alt=""/></a></div>
   <nav id="onTop" class="menu gird">
     <ul><a href="#about" data-target="menu">
@@ -41,28 +62,28 @@
     </div>
   </div>
   <div id="photo" class="photo grid">
-    <div class="imgPhoto grid"><a href="#!" class="grid">
-        <div class="img grid"><img src="img/photo1.jpg" alt=""/></div>
-        <div class="textPhoto grid"><span>Наша любимая студия</span></div></a></div>
-    <div class="imgPhoto grid"><a href="#!" class="grid">
+    <div class="imgPhoto grid"><a href="img/photo1.jpg" title="Наша любимая студия" class="grid">
+        <div id="img" class="img grid"><img src="img/photo1.jpg" alt=""/></div>
+        <div class="textPhoto grid mfp-title"><span>Наша любимая студия</span></div></a></div>
+    <div class="imgPhoto grid"><a href="img/photo2.jpg" class="grid">
         <div class="img grid"><img src="img/photo2.jpg" alt=""/></div>
         <div class="textPhoto grid"><span>Наша любимая студия</span></div></a></div>
-    <div class="imgPhoto grid"><a href="#!" class="grid">
+    <div class="imgPhoto grid"><a href="img/photo3.jpg" class="grid">
         <div class="img grid"><img src="img/photo3.jpg" alt=""/></div>
         <div class="textPhoto grid"><span>Наша любимая студия</span></div></a></div>
-    <div class="imgPhoto grid"><a href="#!" class="grid">
+    <div class="imgPhoto grid"><a href="img/photo4.jpg" class="grid">
         <div class="img grid"><img src="img/photo4.jpg" alt=""/></div>
         <div class="textPhoto grid"><span>Наша любимая студия</span></div></a></div>
-    <div class="imgPhoto grid"><a href="#!" class="grid">
+    <div class="imgPhoto grid"><a href="img/photo5.jpg" class="grid">
         <div class="img grid"><img src="img/photo5.jpg" alt=""/></div>
         <div class="textPhoto grid"><span>Наша любимая студия</span></div></a></div>
-    <div class="imgPhoto grid"><a href="#!" class="grid">
+    <div class="imgPhoto grid"><a href="img/photo6.jpg" class="grid">
         <div class="img grid"><img src="img/photo6.jpg" alt=""/></div>
         <div class="textPhoto grid"><span>Наша любимая студия</span></div></a></div>
   </div>
   <div id="servises" class="wrapper">
     <h2>услуги</h2>
-    <div class="services"><span>Профессиональная студия звукозаписи&nbsp</span><span>PAVLIK GOVOR1 SOUND&nbsp</span><span>&#8212&nbspпредоставляет широкий спектр услуг:</span>
+    <div class="services"><span>Профессиональная студия звукозаписи&nbsp</span><br class="hide"/><span>PAVLIK GOVOR1 SOUND&nbsp</span><br class="hide"/><span>&nbspпредоставляет широкий спектр услуг:</span>
       <div class="servicesTable grid">
         <div class="t"><span>Песни «под ключ»</span></div>
         <div class="t"><span>Написание текста и музыки</span></div>
@@ -84,7 +105,7 @@
   <div class="ourStudio">
     <div class="wrapper">
       <div class="textTop"><span>Наша студия основана в 2018 году. Расположена в центре Киева.</span><br/><span>Директорами являются:</span><br/><br/><b>Дмитрий Говоренко</b><br/><span>основатель студии, композитор, продюсер группы «Two Kooms»</span><br/><span>&</span><br/><b>Александр Павлик</b><br/><span>заслуженный артист Украины, участник группы «Two Kooms».</span></div>
-      <div class="ad"><span>Со студией сотрудничает успешный музыкальный проект группа&nbsp</span><a href="#!">«Two Kooms»</a></div>
+      <div class="ad"><span>Со студией сотрудничает успешный музыкальный проект группа&nbsp</span><br class="hide"/><a href="#!">«Two Kooms»</a></div>
     </div>
   </div>
   <div id="contacts" class="wrapper">
@@ -121,6 +142,7 @@
   <!-- bower:js-->
   <script src="js/jquery/dist/jquery.js"></script>
   <script src="js/slick-carousel/slick/slick.js"></script>
+  <script src="js/magnific-popup/dist/jquery.magnific-popup.js"></script>
   <!-- endbower-->
   <script src="js/main.js"></script>
   <!-- endbuild-->

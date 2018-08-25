@@ -9,7 +9,7 @@
     "email": "hello@jonsuh.com",
     "url": "https://jonsuh.com/hamburgers"
   },
-  "main": "_sass/hamburgers/hamburgers.scss",
+  "main": "dist/hamburgers.css",
   "keywords": [
     "css",
     "hamburger",
