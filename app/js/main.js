@@ -60,6 +60,8 @@ $(document).mouseup(function (e) { // событие клика по веб-до
 				// Done Functions
 				th.trigger("reset");
 			}, 1000);
+			location.reload();
+
 		});
 		return false;
 	});

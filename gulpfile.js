@@ -43,10 +43,10 @@ gulp.task('build', ['clean', 'tiny', 'combine'], function () {
 		.pipe(gulp.dest('dist/fonts/'))
 	var buildFonts = gulp.src('app/img/*.svg')
 		.pipe(gulp.dest('dist/img/'))
-	var buildUncss = gulp.src('dist/css/main.min.css')
-		.pipe(uncss({
-			html: ['dist/index.html']
-		}))
+	// var buildUncss = gulp.src('dist/css/main.min.css')
+	// 	.pipe(uncss({
+	// 		html: ['dist/index.html']
+	// 	}))
 		.pipe(gulp.dest('dist/css'));
 });
 

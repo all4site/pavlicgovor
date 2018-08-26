@@ -250,6 +250,9 @@ body {
   background: rgba(0, 0, 0, 0.3);
   z-index: 999; }
 
+form[type='hidden'] {
+  display: none; }
+
 .hide {
   display: none; }
 
@@ -411,7 +414,7 @@ body {
       background: rgba(219, 171, 33, 0.4); }
 
 .ourStudio {
-  background: url("../img/ad.png");
+  background: url("../img/advaice.png");
   background-position: center;
   background-size: cover;
   margin-top: 50px;
